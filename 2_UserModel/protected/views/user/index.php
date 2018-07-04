@@ -1,7 +1,8 @@
 
 <h2>Imion użytkowników</h2>
 <?php
-foreach ($usersArray as &$user)
+
+foreach($users as $user)
 {
-    echo '<p>' . $user . '</p>';
+    echo '<p>' . $user->name . '</p>';
 }
