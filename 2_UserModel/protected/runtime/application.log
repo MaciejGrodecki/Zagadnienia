@@ -575,3 +575,136 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/zagadnienia/2_UserModel/index.php?r=user/geid
 ---
+2018/07/04 09:16:46 [error] [exception.CException] CException: User and its behaviors do not have a method or closure named "compare". in C:\xampp\htdocs\yii-1.1.19.5790cb\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\db\ar\CActiveRecord.php(229): CComponent->__call('compare', Array)
+#1 C:\xampp\htdocs\Zagadnienia\2_UserModel\protected\controllers\UserController.php(33): CActiveRecord->__call('compare', Array)
+#2 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\actions\CInlineAction.php(49): UserController->actionGetName()
+#3 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\CWebApplication.php(282): CController->run('getname')
+#7 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\CWebApplication.php(141): CWebApplication->runController('user/getname')
+#8 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\Zagadnienia\2_UserModel\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/zagadnienia/2_UserModel/index.php?r=user/getname
+---
+2018/07/04 09:17:01 [error] [exception.Error] Error: Call to undefined method User::compare() in C:\xampp\htdocs\Zagadnienia\2_UserModel\protected\controllers\UserController.php:33
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\actions\CInlineAction.php(49): UserController->actionGetName()
+#1 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#3 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\CWebApplication.php(282): CController->run('getname')
+#5 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\CWebApplication.php(141): CWebApplication->runController('user/getname')
+#6 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\Zagadnienia\2_UserModel\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/zagadnienia/2_UserModel/index.php?r=user/getname
+---
+2018/07/04 09:17:03 [error] [exception.Error] Error: Call to undefined method User::compare() in C:\xampp\htdocs\Zagadnienia\2_UserModel\protected\controllers\UserController.php:33
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\actions\CInlineAction.php(49): UserController->actionGetName()
+#1 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#3 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\CWebApplication.php(282): CController->run('getname')
+#5 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\CWebApplication.php(141): CWebApplication->runController('user/getname')
+#6 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\Zagadnienia\2_UserModel\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/zagadnienia/2_UserModel/index.php?r=user/getname
+---
+2018/07/04 09:17:09 [error] [exception.CException] CException: User and its behaviors do not have a method or closure named "compare". in C:\xampp\htdocs\yii-1.1.19.5790cb\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\db\ar\CActiveRecord.php(229): CComponent->__call('compare', Array)
+#1 C:\xampp\htdocs\Zagadnienia\2_UserModel\protected\controllers\UserController.php(33): CActiveRecord->__call('compare', Array)
+#2 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\actions\CInlineAction.php(49): UserController->actionGetName()
+#3 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\CWebApplication.php(282): CController->run('getname')
+#7 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\CWebApplication.php(141): CWebApplication->runController('user/getname')
+#8 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\Zagadnienia\2_UserModel\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/zagadnienia/2_UserModel/index.php?r=user/getname
+---
+2018/07/04 09:18:30 [error] [exception.CException] CException: User and its behaviors do not have a method or closure named "compare". in C:\xampp\htdocs\yii-1.1.19.5790cb\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\db\ar\CActiveRecord.php(229): CComponent->__call('compare', Array)
+#1 C:\xampp\htdocs\Zagadnienia\2_UserModel\protected\controllers\UserController.php(34): CActiveRecord->__call('compare', Array)
+#2 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\actions\CInlineAction.php(49): UserController->actionGetName()
+#3 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\CWebApplication.php(282): CController->run('getname')
+#7 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\CWebApplication.php(141): CWebApplication->runController('user/getname')
+#8 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\Zagadnienia\2_UserModel\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/zagadnienia/2_UserModel/index.php?r=user/getname
+---
+2018/07/04 09:25:15 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\Zagadnienia\2_UserModel\protected\views\user\get.php:3)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\CController.php(872): UserController->renderFile()
+#1 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\CController.php(785): UserController->renderPartial()
+#2 C:\xampp\htdocs\Zagadnienia\2_UserModel\protected\controllers\UserController.php(37): UserController->render()
+#3 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\actions\CInlineAction.php(49): UserController->actionGetName()
+#4 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\CController.php(286): UserController->runAction()
+#6 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\CController.php(265): UserController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\CWebApplication.php(282): UserController->run()
+#8 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\Zagadnienia\2_UserModel\index.php(13): CWebApplication->run()
+REQUEST_URI=/zagadnienia/2_UserModel/index.php?r=user/getname
+in C:\xampp\htdocs\Zagadnienia\2_UserModel\protected\views\user\get.php (3)
+in C:\xampp\htdocs\Zagadnienia\2_UserModel\protected\controllers\UserController.php (37)
+in C:\xampp\htdocs\Zagadnienia\2_UserModel\index.php (13)
+2018/07/04 09:25:26 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\Zagadnienia\2_UserModel\protected\views\user\get.php:3)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\CController.php(872): UserController->renderFile()
+#1 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\CController.php(785): UserController->renderPartial()
+#2 C:\xampp\htdocs\Zagadnienia\2_UserModel\protected\controllers\UserController.php(37): UserController->render()
+#3 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\actions\CInlineAction.php(49): UserController->actionGetName()
+#4 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\CController.php(286): UserController->runAction()
+#6 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\CController.php(265): UserController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\CWebApplication.php(282): UserController->run()
+#8 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\Zagadnienia\2_UserModel\index.php(13): CWebApplication->run()
+REQUEST_URI=/zagadnienia/2_UserModel/index.php?r=user/getname
+in C:\xampp\htdocs\Zagadnienia\2_UserModel\protected\views\user\get.php (3)
+in C:\xampp\htdocs\Zagadnienia\2_UserModel\protected\controllers\UserController.php (37)
+in C:\xampp\htdocs\Zagadnienia\2_UserModel\index.php (13)
+2018/07/04 09:49:48 [error] [php] Undefined variable: user (C:\xampp\htdocs\Zagadnienia\2_UserModel\protected\controllers\UserController.php:36)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\CController.php(286): UserController->runAction()
+#1 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\CController.php(265): UserController->runActionWithFilters()
+#2 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\CWebApplication.php(282): UserController->run()
+#3 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\Zagadnienia\2_UserModel\index.php(13): CWebApplication->run()
+REQUEST_URI=/zagadnienia/2_UserModel/index.php?r=user/getname
+in C:\xampp\htdocs\Zagadnienia\2_UserModel\protected\controllers\UserController.php (36)
+in C:\xampp\htdocs\Zagadnienia\2_UserModel\index.php (13)
+2018/07/04 09:50:25 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\Zagadnienia\2_UserModel\protected\views\user\get.php:3)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\CController.php(872): UserController->renderFile()
+#1 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\CController.php(785): UserController->renderPartial()
+#2 C:\xampp\htdocs\Zagadnienia\2_UserModel\protected\controllers\UserController.php(37): UserController->render()
+#3 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\actions\CInlineAction.php(49): UserController->actionGetName()
+#4 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\CController.php(286): UserController->runAction()
+#6 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\CController.php(265): UserController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\CWebApplication.php(282): UserController->run()
+#8 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\Zagadnienia\2_UserModel\index.php(13): CWebApplication->run()
+REQUEST_URI=/zagadnienia/2_UserModel/index.php?r=user/getname
+in C:\xampp\htdocs\Zagadnienia\2_UserModel\protected\views\user\get.php (3)
+in C:\xampp\htdocs\Zagadnienia\2_UserModel\protected\controllers\UserController.php (37)
+in C:\xampp\htdocs\Zagadnienia\2_UserModel\index.php (13)
