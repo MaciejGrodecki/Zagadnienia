@@ -9,7 +9,7 @@ class PrinterController extends CController
         
 //        $criteria->compare('id', 1);
 //        $criteria->with = array('users');
-//        $printer = Printer::model()->find($criteria);
+//        $printer = Printer::model()->with('users')->find($criteria);
         $printer = Printer::model()->with('users')->findByPk(1);
         
         
