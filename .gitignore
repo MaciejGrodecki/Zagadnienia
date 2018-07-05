@@ -76,3 +76,4 @@ themes/classic/views/
 
 # End of https://www.gitignore.io/api/yii,phpstorm
 /Relations/nbproject/private/
+/Inheritance/nbproject/private/
