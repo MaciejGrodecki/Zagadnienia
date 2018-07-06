@@ -12,14 +12,4 @@ class m180706_062131_add_ip_address_to_computer_table extends CDbMigration
 		$this->dropColumn('tbl_computer', 'ipAddress');
 	}
 
-	/*
-	// Use safeUp/safeDown to do migration with transaction
-	public function safeUp()
-	{
-	}
-
-	public function safeDown()
-	{
-	}
-	*/
 }

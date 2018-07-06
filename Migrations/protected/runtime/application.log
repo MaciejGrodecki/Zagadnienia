@@ -16,3 +16,122 @@ Stack trace:
 #10 C:\xampp\htdocs\Zagadnienia\Migrations\protected\yiic.php(7): require_once('C:\\xampp\\htdocs...')
 #11 {main}
 ---
+2018/07/06 08:47:40 [error] [php] Undefined offset: 0 (C:\xampp\htdocs\yii-1.1.19.5790cb\framework\db\CDbCommand.php:1518)
+Stack trace:
+#0 C:\xampp\htdocs\Zagadnienia\Migrations\protected\migrations\m180706_063037_insert_first_computer_to_computer_table.php(19): m180706_063037_insert_first_computer_to_computer_table->delete()
+#1 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\db\CDbMigration.php(79): m180706_063037_insert_first_computer_to_computer_table->safeDown()
+#2 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\cli\commands\MigrateCommand.php(440): m180706_063037_insert_first_computer_to_computer_table->down()
+#3 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\cli\commands\MigrateCommand.php(145): MigrateCommand->migrateDown()
+#4 unknown(0): MigrateCommand->actionDown()
+#5 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs()
+#6 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\console\CConsoleCommandRunner.php(71): MigrateCommand->run()
+#7 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#8 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#9 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\yiic.php(33): CConsoleApplication->run()
+#10 C:\xampp\htdocs\Zagadnienia\Migrations\protected\yiic.php(7): require_once()
+
+2018/07/06 08:48:42 [error] [php] Undefined offset: 0 (C:\xampp\htdocs\yii-1.1.19.5790cb\framework\db\CDbCommand.php:1518)
+Stack trace:
+#0 C:\xampp\htdocs\Zagadnienia\Migrations\protected\migrations\m180706_063037_insert_first_computer_to_computer_table.php(19): m180706_063037_insert_first_computer_to_computer_table->delete()
+#1 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\db\CDbMigration.php(79): m180706_063037_insert_first_computer_to_computer_table->safeDown()
+#2 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\cli\commands\MigrateCommand.php(440): m180706_063037_insert_first_computer_to_computer_table->down()
+#3 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\cli\commands\MigrateCommand.php(145): MigrateCommand->migrateDown()
+#4 unknown(0): MigrateCommand->actionDown()
+#5 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs()
+#6 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\console\CConsoleCommandRunner.php(71): MigrateCommand->run()
+#7 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#8 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#9 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\yiic.php(33): CConsoleApplication->run()
+#10 C:\xampp\htdocs\Zagadnienia\Migrations\protected\yiic.php(7): require_once()
+
+2018/07/06 08:50:11 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'PC_1' in 'where clause'. The SQL statement executed was: DELETE FROM `tbl_computer` WHERE name = PC_1.
+2018/07/06 08:53:44 [error] [exception.Error] Error: Using $this when not in object context in C:\xampp\htdocs\yii-1.1.19.5790cb\framework\db\CDbCommand.php:780
+Stack trace:
+#0 C:\xampp\htdocs\Zagadnienia\Migrations\protected\migrations\m180706_063037_insert_first_computer_to_computer_table.php(19): CDbCommand::where('name = 'PC_1'')
+#1 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\db\CDbMigration.php(79): m180706_063037_insert_first_computer_to_computer_table->safeDown()
+#2 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\cli\commands\MigrateCommand.php(440): CDbMigration->down()
+#3 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\cli\commands\MigrateCommand.php(145): MigrateCommand->migrateDown('m180706_063037_...')
+#4 [internal function]: MigrateCommand->actionDown(Array)
+#5 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#6 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#7 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#8 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#9 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\yiic.php(33): CApplication->run()
+#10 C:\xampp\htdocs\Zagadnienia\Migrations\protected\yiic.php(7): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+---
+2018/07/06 08:54:01 [error] [exception.Error] Error: Using $this when not in object context in C:\xampp\htdocs\yii-1.1.19.5790cb\framework\db\CDbCommand.php:780
+Stack trace:
+#0 C:\xampp\htdocs\Zagadnienia\Migrations\protected\migrations\m180706_063037_insert_first_computer_to_computer_table.php(19): CDbCommand::where('name = 'PC_1'')
+#1 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\db\CDbMigration.php(79): m180706_063037_insert_first_computer_to_computer_table->safeDown()
+#2 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\cli\commands\MigrateCommand.php(440): CDbMigration->down()
+#3 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\cli\commands\MigrateCommand.php(145): MigrateCommand->migrateDown('m180706_063037_...')
+#4 [internal function]: MigrateCommand->actionDown(Array)
+#5 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#6 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#7 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#8 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#9 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\yiic.php(33): CApplication->run()
+#10 C:\xampp\htdocs\Zagadnienia\Migrations\protected\yiic.php(7): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+---
+2018/07/06 09:09:36 [error] [exception.Error] Error: Using $this when not in object context in C:\xampp\htdocs\yii-1.1.19.5790cb\framework\db\CDbCommand.php:780
+Stack trace:
+#0 C:\xampp\htdocs\Zagadnienia\Migrations\protected\migrations\m180706_063037_insert_first_computer_to_computer_table.php(19): CDbCommand::where('and', 'name = 'PC_1'', 'inventoryNumber...')
+#1 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\db\CDbMigration.php(79): m180706_063037_insert_first_computer_to_computer_table->safeDown()
+#2 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\cli\commands\MigrateCommand.php(440): CDbMigration->down()
+#3 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\cli\commands\MigrateCommand.php(145): MigrateCommand->migrateDown('m180706_063037_...')
+#4 [internal function]: MigrateCommand->actionDown(Array)
+#5 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#6 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#7 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#8 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#9 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\yiic.php(33): CApplication->run()
+#10 C:\xampp\htdocs\Zagadnienia\Migrations\protected\yiic.php(7): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+---
+2018/07/06 09:10:41 [error] [exception.Error] Error: Using $this when not in object context in C:\xampp\htdocs\yii-1.1.19.5790cb\framework\db\CDbCommand.php:780
+Stack trace:
+#0 C:\xampp\htdocs\Zagadnienia\Migrations\protected\migrations\m180706_063037_insert_first_computer_to_computer_table.php(20): CDbCommand::where(Array)
+#1 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\db\CDbMigration.php(79): m180706_063037_insert_first_computer_to_computer_table->safeDown()
+#2 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\cli\commands\MigrateCommand.php(440): CDbMigration->down()
+#3 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\cli\commands\MigrateCommand.php(145): MigrateCommand->migrateDown('m180706_063037_...')
+#4 [internal function]: MigrateCommand->actionDown(Array)
+#5 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#6 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#7 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#8 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#9 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\yiic.php(33): CApplication->run()
+#10 C:\xampp\htdocs\Zagadnienia\Migrations\protected\yiic.php(7): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+---
+2018/07/06 09:12:17 [error] [exception.Error] Error: Using $this when not in object context in C:\xampp\htdocs\yii-1.1.19.5790cb\framework\db\CDbCommand.php:780
+Stack trace:
+#0 C:\xampp\htdocs\Zagadnienia\Migrations\protected\migrations\m180706_063037_insert_first_computer_to_computer_table.php(20): CDbCommand::where(Array)
+#1 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\db\CDbMigration.php(79): m180706_063037_insert_first_computer_to_computer_table->safeDown()
+#2 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\cli\commands\MigrateCommand.php(440): CDbMigration->down()
+#3 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\cli\commands\MigrateCommand.php(145): MigrateCommand->migrateDown('m180706_063037_...')
+#4 [internal function]: MigrateCommand->actionDown(Array)
+#5 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#6 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#7 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#8 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#9 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\yiic.php(33): CApplication->run()
+#10 C:\xampp\htdocs\Zagadnienia\Migrations\protected\yiic.php(7): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+---
+2018/07/06 09:13:04 [error] [exception.Error] Error: Using $this when not in object context in C:\xampp\htdocs\yii-1.1.19.5790cb\framework\db\CDbCommand.php:780
+Stack trace:
+#0 C:\xampp\htdocs\Zagadnienia\Migrations\protected\migrations\m180706_063037_insert_first_computer_to_computer_table.php(20): CDbCommand::where(Array)
+#1 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\db\CDbMigration.php(79): m180706_063037_insert_first_computer_to_computer_table->safeDown()
+#2 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\cli\commands\MigrateCommand.php(440): CDbMigration->down()
+#3 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\cli\commands\MigrateCommand.php(145): MigrateCommand->migrateDown('m180706_063037_...')
+#4 [internal function]: MigrateCommand->actionDown(Array)
+#5 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#6 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#7 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#8 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#9 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\yiic.php(33): CApplication->run()
+#10 C:\xampp\htdocs\Zagadnienia\Migrations\protected\yiic.php(7): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+---
