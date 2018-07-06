@@ -1,1 +1,18 @@
 2018/07/06 08:09:50 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'computer_db.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2018/07/06 08:24:38 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ipAddress' in 'field list'. The SQL statement executed was: INSERT INTO `tbl_computer` (`ipAddress`) VALUES (:ipAddress).
+2018/07/06 08:25:14 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ipAddress' in 'field list'. The SQL statement executed was: INSERT INTO `tbl_computer` (`ipAddress`) VALUES (:ipAddress).
+2018/07/06 08:25:45 [error] [exception.ArgumentCountError] ArgumentCountError: Too few arguments to function CDbMigration::addColumn(), 2 passed in C:\xampp\htdocs\Zagadnienia\Migrations\protected\migrations\m180706_062131_add_ip_address_to_computer_table.php on line 8 and exactly 3 expected in C:\xampp\htdocs\yii-1.1.19.5790cb\framework\db\CDbMigration.php:299
+Stack trace:
+#0 C:\xampp\htdocs\Zagadnienia\Migrations\protected\migrations\m180706_062131_add_ip_address_to_computer_table.php(8): CDbMigration->addColumn('tbl_computer', Array)
+#1 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\db\CDbMigration.php(53): m180706_062131_add_ip_address_to_computer_table->safeUp()
+#2 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\cli\commands\MigrateCommand.php(415): CDbMigration->up()
+#3 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\cli\commands\MigrateCommand.php(109): MigrateCommand->migrateUp('m180706_062131_...')
+#4 [internal function]: MigrateCommand->actionUp(Array)
+#5 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#6 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#7 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#8 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#9 C:\xampp\htdocs\yii-1.1.19.5790cb\framework\yiic.php(33): CApplication->run()
+#10 C:\xampp\htdocs\Zagadnienia\Migrations\protected\yiic.php(7): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+---
